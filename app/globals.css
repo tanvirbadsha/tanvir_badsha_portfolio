@@ -1,5 +1,25 @@
 @import "tailwindcss";
 
+:root {
+  /* Custom fonts */
+  --font-outfit: "Outfit", sans-serif;
+  --font-ovo: "Ovo", serif;
+}
+
 * {
-  font-family: Outfit;
+  font-family: var(--font-outfit);
+}
+
+/* UTILITY CLASSES */
+.font-ovo {
+  font-family: var(--font-ovo);
+}
+.light_hover_color {
+  color: #fcf4ff;
+}
+.dark_hover_color {
+  color: #2a004a;
+}
+.dark_theme_color {
+  color: #11001f;
 }
