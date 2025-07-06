@@ -1,10 +1,20 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { assets } from "@/assets/assets";
 
 function Navbar() {
   const sideMenuRef = useRef();
+  const [isScroll, setIsScroll] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (scrollY > 50) {
+        setIsScroll(true);
+      } else {
+        setIsScroll(false);
+      }
+    });
+  }, [scroll]);
   const openMenu = () => {
     sideMenuRef.current.style.transform = "translateX(-16rem)";
   };
@@ -12,7 +22,7 @@ function Navbar() {
     sideMenuRef.current.style.transform = "translateX(16rem)";
   };
   return (
-    <header className="min-h-[81px]">
+    <header className={`min-h-[15vh] md:min-h-[20vh] `}>
       <div className="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
         <Image
           src={assets.header_bg_color}
@@ -21,7 +31,11 @@ function Navbar() {
         />
       </div>
 
-      <nav className="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
+      <nav
+        className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${
+          isScroll ? "bg-white/50 backdrop-blur-lg shadow-sm" : ""
+        }`}
+      >
         <a href="#top">
           <Image src={assets.logo} className="w-30 mr-14" alt="website_logo" />
         </a>
