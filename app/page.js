@@ -1,7 +1,11 @@
+import Navbar from "@/components/Navbar";
+import ShowCase from "@/components/ShowCase";
+
 export default function Home() {
   return (
     <div>
-      <h1>Page Component Home</h1>
+      {/* <Navbar /> */}
+      <ShowCase />
     </div>
   );
 }

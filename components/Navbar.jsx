@@ -12,7 +12,7 @@ function Navbar() {
     sideMenuRef.current.style.transform = "translateX(16rem)";
   };
   return (
-    <header>
+    <header className="min-h-[81px]">
       <div className="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
         <Image
           src={assets.header_bg_color}
