@@ -29,7 +29,8 @@ function AboutMe() {
             {infoList.map(({ icon, iconDark, title, description }, index) => (
               <li
                 key={index}
-                className="border-[0.5px] border-gray-400 p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow hover:shadow-black"
+                className="border-[0.5px] border-gray-400 p-6 cursor-pointer
+                 hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-black"
               >
                 <Image src={icon} alt="icon" className="w-7 mt-3" />
                 <h3 className="my-4 font-semibold text-gray-700">{title}</h3>

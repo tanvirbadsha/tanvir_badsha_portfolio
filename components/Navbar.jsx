@@ -14,7 +14,7 @@ function Navbar() {
         setIsScroll(false);
       }
     });
-  }, [scroll]);
+  }, [isScroll]);
   const openMenu = () => {
     sideMenuRef.current.style.transform = "translateX(-16rem)";
   };

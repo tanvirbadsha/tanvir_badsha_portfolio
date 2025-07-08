@@ -1,9 +1,16 @@
 @import "tailwindcss";
 
-:root {
-  /* Custom fonts */
-  --font-outfit: "Outfit", sans-serif;
-  --font-ovo: "Ovo", serif;
+/* Define your theme values: */
+@theme {
+  --color-light-hover: #fcf4ff;
+  --color-dark-hover: #2a004a;
+  --color-dark-theme: #11001f;
+
+  --font-Outfit: "Outfit", sans-serif;
+  --font-Ovo: "Ovo", serif;
+
+  --shadow-black: 4px 4px 0 #000;
+  --shadow-white: 4px 4px 0 #fff;
 }
 
 * {
