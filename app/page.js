@@ -1,4 +1,6 @@
 import AboutMe from "@/components/AboutMe";
+import ContactMe from "@/components/ContactMe";
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Services from "@/components/Services";
 import ShowCase from "@/components/ShowCase";
@@ -12,6 +14,8 @@ export default function Home() {
       <AboutMe />
       <Services />
       <Work />
+      <ContactMe />
+      <Footer />
     </section>
   );
 }
